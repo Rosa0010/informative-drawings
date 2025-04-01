@@ -1,0 +1,12 @@
+- added checkpoints
+- added results dir to store results (need to mount to see them)
+- added dockerfile and requirements file
+- dataset.py line 31, from 10,000 to 203000
+- test.py line 54, how many from 100 to 202599
+
+
+Build:
+docker build -t informative-drawings .
+
+Run:
+docker run --gpus all -v /home/rosemary/landseer/informative-drawings/results:/app/results -v /share/landseer/img_align_celeba:/app/data  informative-drawings python test.py --name anime_style --dataroot data

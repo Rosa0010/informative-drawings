@@ -51,7 +51,7 @@ parser.add_argument('--norm', type=str, default='instance', help='instance norma
 parser.add_argument('--predict_depth', type=int, default=0, help='run geometry prediction on the generated images')
 parser.add_argument('--save_input', type=int, default=0, help='save input image')
 parser.add_argument('--reconstruct', type=int, default=0, help='get reconstruction')
-parser.add_argument('--how_many', type=int, default=100, help='number of images to test')
+parser.add_argument('--how_many', type=int, default=202599, help='number of images to test')
 
 opt = parser.parse_args()
 print(opt)
