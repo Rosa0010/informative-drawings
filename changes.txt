@@ -10,3 +10,6 @@ docker build -t informative-drawings .
 
 Run:
 docker run --gpus all -v /home/rosemary/landseer/informative-drawings/results:/app/results -v /share/landseer/img_align_celeba:/app/data  informative-drawings python test.py --name anime_style --dataroot data
+
+
+Remember: Remember to add the checkpoints, mount the datasets (both dataroot and for results)
